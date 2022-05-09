@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		5C4AE963281E978B00A07B51 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4AE962281E978B00A07B51 /* AppDelegate.swift */; };
 		5C4AE965281E978B00A07B51 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4AE964281E978B00A07B51 /* SceneDelegate.swift */; };
-		5C4AE967281E978B00A07B51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4AE966281E978B00A07B51 /* ViewController.swift */; };
-		5C4AE96A281E978B00A07B51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C4AE968281E978B00A07B51 /* Main.storyboard */; };
 		5C4AE96C281E978E00A07B51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C4AE96B281E978E00A07B51 /* Assets.xcassets */; };
 		5C4AE96F281E978E00A07B51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C4AE96D281E978E00A07B51 /* LaunchScreen.storyboard */; };
+		5C4AE97E281E987B00A07B51 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4AE97D281E987B00A07B51 /* HomeViewController.swift */; };
+		5C4AE980281E98F400A07B51 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4AE97F281E98F400A07B51 /* HomeTableViewCell.swift */; };
+		5C4AE982281E992E00A07B51 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4AE981281E992E00A07B51 /* HomeCollectionViewCell.swift */; };
+		5C4AE984281E99AB00A07B51 /* CollectionViewCustomFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4AE983281E99AB00A07B51 /* CollectionViewCustomFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5C4AE95F281E978B00A07B51 /* DeltatreAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeltatreAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C4AE962281E978B00A07B51 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C4AE964281E978B00A07B51 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5C4AE966281E978B00A07B51 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5C4AE969281E978B00A07B51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C4AE96B281E978E00A07B51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C4AE96E281E978E00A07B51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C4AE970281E978E00A07B51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C4AE97D281E987B00A07B51 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5C4AE97F281E98F400A07B51 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		5C4AE981281E992E00A07B51 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		5C4AE983281E99AB00A07B51 /* CollectionViewCustomFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCustomFlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,73 @@
 		5C4AE961281E978B00A07B51 /* DeltatreAssignment */ = {
 			isa = PBXGroup;
 			children = (
-				5C4AE962281E978B00A07B51 /* AppDelegate.swift */,
-				5C4AE964281E978B00A07B51 /* SceneDelegate.swift */,
-				5C4AE966281E978B00A07B51 /* ViewController.swift */,
-				5C4AE968281E978B00A07B51 /* Main.storyboard */,
-				5C4AE96B281E978E00A07B51 /* Assets.xcassets */,
-				5C4AE96D281E978E00A07B51 /* LaunchScreen.storyboard */,
-				5C4AE970281E978E00A07B51 /* Info.plist */,
+				5C4AE976281E97BF00A07B51 /* AppLauncher */,
+				5C4AE977281E97D900A07B51 /* Controllers */,
+				5C4AE978281E97DF00A07B51 /* Layouts */,
+				5C4AE979281E97E900A07B51 /* Storyboards */,
+				5C4AE97A281E97F000A07B51 /* Resources */,
 			);
 			path = DeltatreAssignment;
+			sourceTree = "<group>";
+		};
+		5C4AE976281E97BF00A07B51 /* AppLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				5C4AE962281E978B00A07B51 /* AppDelegate.swift */,
+				5C4AE964281E978B00A07B51 /* SceneDelegate.swift */,
+			);
+			path = AppLauncher;
+			sourceTree = "<group>";
+		};
+		5C4AE977281E97D900A07B51 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5C4AE97B281E985F00A07B51 /* Home */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5C4AE978281E97DF00A07B51 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				5C4AE983281E99AB00A07B51 /* CollectionViewCustomFlowLayout.swift */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		5C4AE979281E97E900A07B51 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5C4AE96D281E978E00A07B51 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5C4AE97A281E97F000A07B51 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5C4AE96B281E978E00A07B51 /* Assets.xcassets */,
+				5C4AE970281E978E00A07B51 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5C4AE97B281E985F00A07B51 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5C4AE97C281E986500A07B51 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5C4AE97C281E986500A07B51 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5C4AE97D281E987B00A07B51 /* HomeViewController.swift */,
+				5C4AE97F281E98F400A07B51 /* HomeTableViewCell.swift */,
+				5C4AE981281E992E00A07B51 /* HomeCollectionViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +189,6 @@
 			files = (
 				5C4AE96F281E978E00A07B51 /* LaunchScreen.storyboard in Resources */,
 				5C4AE96C281E978E00A07B51 /* Assets.xcassets in Resources */,
-				5C4AE96A281E978B00A07B51 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +199,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C4AE967281E978B00A07B51 /* ViewController.swift in Sources */,
+				5C4AE982281E992E00A07B51 /* HomeCollectionViewCell.swift in Sources */,
 				5C4AE963281E978B00A07B51 /* AppDelegate.swift in Sources */,
 				5C4AE965281E978B00A07B51 /* SceneDelegate.swift in Sources */,
+				5C4AE984281E99AB00A07B51 /* CollectionViewCustomFlowLayout.swift in Sources */,
+				5C4AE980281E98F400A07B51 /* HomeTableViewCell.swift in Sources */,
+				5C4AE97E281E987B00A07B51 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5C4AE968281E978B00A07B51 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5C4AE969281E978B00A07B51 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5C4AE96D281E978E00A07B51 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,10 +347,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R6EWZ5K58V;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DeltatreAssignment/Info.plist;
+				INFOPLIST_FILE = /Users/ishu/Documents/Ishwar/Deltatre/DeltatreAssignment/DeltatreAssignment/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -319,10 +374,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = R6EWZ5K58V;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = DeltatreAssignment/Info.plist;
+				INFOPLIST_FILE = /Users/ishu/Documents/Ishwar/Deltatre/DeltatreAssignment/DeltatreAssignment/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
